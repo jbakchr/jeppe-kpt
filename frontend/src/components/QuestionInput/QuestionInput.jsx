@@ -11,7 +11,11 @@ const inputStyles = {
 export const QuestionInput = () => {
   return (
     <div className="question-input">
-      <input type="text" style={inputStyles} />
+      <input
+        type="text"
+        style={inputStyles}
+        placeholder="Spørg Jeppe om alt! Det li'meget .."
+      />
     </div>
   );
 };

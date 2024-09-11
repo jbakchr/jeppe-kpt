@@ -1,6 +1,7 @@
 .question-input {
-  background-color: lightgray;
+  background-color: rgba(244, 244, 244, 255);
   width: 600px;
+  max-width: 90%;
   height: 40px;
   border-radius: 20px;
   padding: 0 10p;
