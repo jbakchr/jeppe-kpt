@@ -3,8 +3,8 @@ export const QuestionInput = () => {
     <div
       style={{
         backgroundColor: "lightgray",
-        width: "30%",
-        height: "35px",
+        width: "600px",
+        height: "40px",
         borderRadius: "20px",
         padding: "0 10px",
         display: "flex",
