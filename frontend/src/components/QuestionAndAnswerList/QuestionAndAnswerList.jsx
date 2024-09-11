@@ -1,6 +1,7 @@
 import { useContext } from "react";
 
 import { responseContext } from "../../context/ResponseContext";
+import { QuestionCard } from "../QuestionCard/QuestionCard";
 
 export const QuestionAndAnswerList = () => {
   const { questionAndAnswers } = useContext(responseContext);
@@ -8,11 +9,7 @@ export const QuestionAndAnswerList = () => {
   const renderQuestionAndAnswers = () => {
     return questionAndAnswers.map((item, index) => {
       if (item.question) {
-        return (
-          <div key={index}>
-            <p>{item.question}</p>
-          </div>
-        );
+        return <QuestionCard key={index} item={item} />;
       } else {
         return (
           <div key={index}>
