@@ -12,12 +12,7 @@ export const QuestionAndAnswerList = () => {
       if (item.question) {
         return <QuestionCard key={index} item={item} />;
       } else {
-        return (
-          // <div key={index}>
-          //   <p>{item.answer}</p>
-          // </div>
-          <AnswerCard key={index} item={item} />
-        );
+        return <AnswerCard key={index} item={item} />;
       }
     });
   };
