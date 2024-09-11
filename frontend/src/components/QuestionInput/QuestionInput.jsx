@@ -1,3 +1,7 @@
+import { useContext } from "react";
+
+import { responseContext } from "../../context/ResponseContext";
+
 import "./QuestionInput.css";
 
 const inputStyles = {
@@ -9,9 +13,11 @@ const inputStyles = {
 };
 
 export const QuestionInput = () => {
+  const { requestAnswer } = useContext(responseContext);
+
   const keyDown = (e) => {
     if (e.key === "Enter") {
-      console.log("Enter key pressed");
+      requestAnswer(e.target.value);
     }
   };
 
