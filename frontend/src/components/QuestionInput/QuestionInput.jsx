@@ -1,19 +1,17 @@
 import "./QuestionInput.css";
 
+const inputStyles = {
+  flexGrow: 1,
+  margin: "10px",
+  border: "none",
+  background: "none",
+  outline: "none",
+};
+
 export const QuestionInput = () => {
   return (
     <div className="question-input">
-      <input
-        type="text"
-        style={{
-          flexGrow: 1,
-          margin: "10px",
-          border: "none",
-          background: "none",
-          outline: "none",
-        }}
-      />
-      <p>icon</p>
+      <input type="text" style={inputStyles} />
     </div>
   );
 };
