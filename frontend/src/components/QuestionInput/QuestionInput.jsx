@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useState, useContext } from "react";
 
 import { responseContext } from "../../context/ResponseContext";
 
@@ -13,10 +13,16 @@ const inputStyles = {
 };
 
 export const QuestionInput = () => {
+  const [inputValue, setInputValue] = useState("");
   const { requestAnswer } = useContext(responseContext);
+
+  const handleOnChange = (e) => {
+    setInputValue(e.target.value);
+  };
 
   const handleAnswerRequest = (e) => {
     if (e.key === "Enter") {
+      setInputValue("");
       requestAnswer(e.target.value);
     }
   };
@@ -28,6 +34,8 @@ export const QuestionInput = () => {
         style={inputStyles}
         placeholder="Spørg Jeppe om alt! Det li'meget .."
         onKeyDown={handleAnswerRequest}
+        onChange={handleOnChange}
+        value={inputValue}
       />
     </div>
   );
