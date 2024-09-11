@@ -1,5 +1,10 @@
-import React from "react";
+import "./InputSection.css";
 
 export const InputSection = () => {
-  return <div>InputSection</div>;
+  return (
+    <div className="sticky-bottom">
+      <p>input goes here</p>
+      <p>hello</p>
+    </div>
+  );
 };

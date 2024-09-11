@@ -3,4 +3,10 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  border: 1px solid black;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
