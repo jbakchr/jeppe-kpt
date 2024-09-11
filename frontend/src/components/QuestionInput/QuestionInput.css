@@ -1,0 +1,10 @@
+.question-input {
+  background-color: lightgray;
+  width: 600px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0 10p;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
