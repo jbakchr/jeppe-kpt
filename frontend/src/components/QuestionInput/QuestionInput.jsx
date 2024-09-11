@@ -21,7 +21,7 @@ export const QuestionInput = () => {
   };
 
   const handleAnswerRequest = (e) => {
-    if (e.key === "Enter") {
+    if (e.key === "Enter" && inputValue.length > 0) {
       setInputValue("");
       requestAnswer(e.target.value);
     }
