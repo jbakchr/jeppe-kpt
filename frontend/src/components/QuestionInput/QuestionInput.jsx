@@ -15,7 +15,7 @@ const inputStyles = {
 export const QuestionInput = () => {
   const { requestAnswer } = useContext(responseContext);
 
-  const keyDown = (e) => {
+  const handleAnswerRequest = (e) => {
     if (e.key === "Enter") {
       requestAnswer(e.target.value);
     }
@@ -27,7 +27,7 @@ export const QuestionInput = () => {
         type="text"
         style={inputStyles}
         placeholder="Spørg Jeppe om alt! Det li'meget .."
-        onKeyDown={keyDown}
+        onKeyDown={handleAnswerRequest}
       />
     </div>
   );
