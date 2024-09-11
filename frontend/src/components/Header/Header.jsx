@@ -1,5 +1,5 @@
 import "./Header.css";
 
-export const Header = ({ text }) => {
-  return <h1 className="header">{text}</h1>;
+export const Header = () => {
+  return <h1 className="header">JeppeKPT</h1>;
 };

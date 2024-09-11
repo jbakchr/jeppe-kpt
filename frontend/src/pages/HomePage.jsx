@@ -4,7 +4,7 @@ import { InputSection } from "../components/InputSection/InputSection";
 export const Homepage = () => {
   return (
     <div>
-      <Header text="JeppeKPT" />
+      <Header />
       <InputSection />
     </div>
   );
