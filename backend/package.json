@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "Jonas Bak Phillipson",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.20.0"
+  }
 }
